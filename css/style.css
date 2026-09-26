@@ -1273,3 +1273,224 @@ footer {
     }
 
 }
+/* =========================
+   HONORS & EXPERIENCES PAGE
+========================= */
+
+.honors-page {
+    min-height: calc(100vh - 70px);
+}
+
+.honors-hero {
+    padding: 110px 0 120px;
+}
+
+.honors-intro {
+    max-width: 700px;
+    color: #68707d;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 60px;
+}
+
+
+/* HONORS GRID */
+
+.honors-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+
+/* CARD */
+
+.honors-card {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 430px;
+
+    padding: 35px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 22px;
+
+    box-shadow: 0 15px 45px rgba(20, 20, 40, 0.05);
+
+    text-decoration: none;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.honors-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #c41e3a;
+
+    box-shadow: 0 25px 65px rgba(20, 20, 40, 0.11);
+}
+
+
+/* CARD TOP */
+
+.honors-card-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 55px;
+}
+
+.honors-number {
+    font-size: 0.9rem;
+
+    font-weight: 800;
+
+    color: #9aa0aa;
+}
+
+.honors-arrow {
+    width: 44px;
+    height: 44px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #f7f8fc;
+
+    color: #171923;
+
+    font-size: 1.2rem;
+
+    transition: 0.3s ease;
+}
+
+.honors-card:hover .honors-arrow {
+    background: #c41e3a;
+
+    color: white;
+
+    transform: rotate(5deg);
+}
+
+
+/* CONTENT */
+
+.honors-card-content {
+    flex: 1;
+}
+
+.honors-category {
+    margin-bottom: 12px;
+
+    font-size: 0.72rem;
+
+    font-weight: 800;
+
+    letter-spacing: 1.8px;
+
+    color: #c41e3a;
+}
+
+.honors-card h2 {
+    margin-bottom: 18px;
+
+    font-size: 2rem;
+
+    letter-spacing: -1px;
+
+    color: #171923;
+}
+
+.honors-card-content > p:last-child {
+    max-width: 500px;
+
+    color: #68707d;
+
+    line-height: 1.7;
+
+    font-size: 0.98rem;
+}
+
+
+/* FOOTER */
+
+.honors-card-footer {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding-top: 22px;
+
+    margin-top: 35px;
+
+    border-top: 1px solid #e5e7eb;
+
+    color: #171923;
+
+    font-size: 0.9rem;
+
+    font-weight: 800;
+}
+
+.honors-card-footer span:last-child {
+    color: #c41e3a;
+
+    font-size: 1.25rem;
+
+    transition: transform 0.3s ease;
+}
+
+.honors-card:hover .honors-card-footer span:last-child {
+    transform: translateX(6px);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .honors-hero {
+        padding: 75px 0 90px;
+    }
+
+    .honors-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .honors-card {
+        min-height: 390px;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .honors-card {
+        padding: 28px;
+        min-height: 360px;
+    }
+
+    .honors-card-top {
+        margin-bottom: 40px;
+    }
+
+    .honors-card h2 {
+        font-size: 1.7rem;
+    }
+
+}
