@@ -36,8 +36,6 @@
       background: rgba(247, 248, 252, 0.92);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid #e5e7eb;
-    display: flex;
-    flex-direction: column;
     }
 
 
@@ -85,8 +83,7 @@
     }
 
     .hero-grid {
-      display: grid;
-      grid-template-columns: 1.3fr 0.7fr;
+      grid-template-columns: 1fr;
       gap: 70px;
       align-items: center;
     }
@@ -226,8 +223,7 @@
     /* ABOUT */
 
     .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr ;
       gap: 60px;
     }
 
