@@ -2209,3 +2209,195 @@ footer {
     object-fit: cover;
     display: block;
 }
+/* =========================
+   PROJECT DETAIL PAGE
+========================= */
+
+.project-detail-page {
+    min-height: calc(100vh - 70px);
+}
+
+.project-detail-hero {
+    padding: 90px 0 120px;
+}
+
+
+/* BACK LINK */
+
+.back-link {
+    display: inline-block;
+
+    margin-bottom: 45px;
+
+    color: #68707d;
+
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+
+.back-link:hover {
+    color: #c41e3a;
+    transform: translateX(-4px);
+}
+
+
+/* INTRO */
+
+.project-detail-intro {
+    max-width: 780px;
+
+    margin-top: 25px;
+    margin-bottom: 65px;
+
+    color: #68707d;
+
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+
+/* PROJECT INFO */
+
+.project-info-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    border-top: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+
+    margin-bottom: 100px;
+}
+
+.project-info-item {
+    padding: 25px 20px;
+
+    border-right: 1px solid #e5e7eb;
+}
+
+.project-info-item:last-child {
+    border-right: none;
+}
+
+.project-info-item span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #9aa0aa;
+
+    font-size: 0.7rem;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+}
+
+.project-info-item strong {
+    color: #171923;
+
+    font-size: 1rem;
+}
+
+
+/* REFLECTION SECTIONS */
+
+.reflection-section {
+    display: grid;
+
+    grid-template-columns: 220px 1fr;
+
+    gap: 70px;
+
+    max-width: 1000px;
+
+    padding: 70px 0;
+
+    border-top: 1px solid #e5e7eb;
+}
+
+.reflection-label {
+    color: #c41e3a;
+
+    font-size: 0.75rem;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.reflection-content {
+    max-width: 700px;
+}
+
+.reflection-content h2 {
+    margin-bottom: 25px;
+
+    color: #171923;
+
+    font-size: 2rem;
+
+    letter-spacing: -1px;
+}
+
+.reflection-content p {
+    margin-bottom: 20px;
+
+    color: #68707d;
+
+    font-size: 1.05rem;
+
+    line-height: 1.85;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .project-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-info-item:nth-child(2) {
+        border-right: none;
+    }
+
+    .reflection-section {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .project-detail-hero {
+        padding: 70px 0 90px;
+    }
+
+    .project-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-info-item {
+        border-right: none;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    .project-info-item:last-child {
+        border-bottom: none;
+    }
+
+    .reflection-section {
+        padding: 50px 0;
+    }
+
+    .reflection-content h2 {
+        font-size: 1.6rem;
+    }
+
+}
